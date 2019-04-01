@@ -1,5 +1,6 @@
 package com.example.day4;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -44,6 +45,13 @@ private final String TAG = SharedMainActivity.class.getCanonicalName();
 
             mEditor.apply();
             //mEditor.commit();
+
+            Intent mIntent = new Intent(SharedMainActivity.this,Privateactivity.class);
+            startActivity(mIntent);
+
+
+
+
         }
 
     }

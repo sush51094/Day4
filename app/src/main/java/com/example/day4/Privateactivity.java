@@ -11,6 +11,13 @@ private SharedPreferences sharedPreferences;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_privateactivity);
+        sharedPreferences = getPreferences(MODE_PRIVATE);
+
+        SharedPreferences.Editor mEditor = sharedPreferences.edit();
+        mEditor.putString("test", "Lambton College in Toronto");
+        mEditor.apply();
+
+
 
     }
 }
